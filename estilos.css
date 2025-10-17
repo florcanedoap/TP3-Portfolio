@@ -1,0 +1,233 @@
+@charset "UTF-8";
+/* CSS document */
+
+/*Importación de fuentes*/
+
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+
+@import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap);
+
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap);
+
+@font-face {
+    font-family: "Display";
+    src: url(fonts/Display/5thAvenue.ttf), format(truetype);
+}
+
+:root {
+    --color_fondo: #fff8f2;
+    --color_texto: #de0060;
+    --color_textosec: #ff4d00;
+    --color_vectores: #ff7e01;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    background-color: var(--color_fondo);
+
+}
+
+/* index */
+
+.body_index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0 0;
+    cursor: url(img/cursor.svg), auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    cursor: url(img/cursor.svg), auto;
+}
+
+.animacion {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+#flor_animada {
+    animation-name: girar;
+    animation-duration: 4s;
+    position: initial;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    margin: 25px;
+}
+
+
+@keyframes girar {
+    from {
+        transform: rotate(45deg);
+    }
+
+    to {
+        transition: transform 0.3;
+    }
+}
+
+.girar {
+    animation: girar continuo 2s linear infinite;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Display";
+    color: var(--color_texto);
+    font-size: 7rem;
+    letter-spacing: 5px;
+}
+
+.texto_roboto {
+    color: var(--color_texto);
+    font-family: "Roboto Mono";
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.botonera_index {
+    display: flex;
+    padding: 50px 150px;
+    flex-direction: row;
+    gap: 125px
+}
+
+.boton_index {
+    display: flex;
+    flex-direction: row;
+    width: 255px;
+    height: 83px;
+    padding: 0 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    background-color: var(--color_vectores);
+    font-family: "Roboto Mono";
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* html */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 20px 0 25px;
+}
+
+.botonera {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 56px;
+    flex-direction: row;
+
+}
+
+.boton_html {
+    color: var(--color_texto);
+    font-family: "Roboto Mono";
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#nav_abierto {
+    color: #ff4d00;
+}
+
+h2 {
+    color: var(--color_texto);
+    font-family: "IBM Plex Sans";
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.5rem;
+}
+
+h3 {
+    color: #000000;
+    font-family: "Roboto Mono";
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* html contacto */
+
+.charlemos_flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.trabajemos_juntos {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 50px 0 50px;
+    padding-right: 30%;
+    gap: 15px;
+}
+
+span {
+    color: var(--color_texto);
+    font-family: "IBM Plex Sans";
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.charlemos_flex {
+    display: flex;
+}
+
+.informacion_datos {
+    display: flex;
+    flex-direction: row;
+}
+
+
+form {
+    background-color: var(--color_vectores);
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height:700px;
+    border-radius: 50px;
+    padding: 30px;
+    gap: 20px;
+}
+
+input {
+    background-color: var(--color_fondo);
+    font-family: "Montserrat";
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    padding: 10px 30px;
+}
+
+textarea {
+    font-family: "Montserrat";
+    border: none;
+    font-size: 1.3em;
+    border-radius: 30px;
+    padding: 15px 0 30px 30px;
+    height: 900px;
+}
+

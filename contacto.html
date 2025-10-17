@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DG | Florencia Cañedo</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/svg" href="img/flor_head.svg">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="img/flor_header.svg" alt="flores_del_nav" id="flor_nav" width="156" height="36">
+            </div>
+
+            <div class="botonera">
+                <a class="boton_html" href="index.html">INICIO</a>
+                <a class="boton_html" href="conoceme.html">CONOCEME</a>
+                <a class="boton_html" href="diseño.html">DISEÑO</a>
+                <a class="boton_html" href="galeria.html">GALERÍA</a>
+                <a class="boton_html" id="nav_abierto" href="contacto.html">CHARLEMOS</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="charlemos_flex">
+            <article class="trabajemos_juntos">
+                <h2>/TRABAJEMOS JUNTOS</h2>
+                <p><span>Si te interesaron mis trabajos y querés que colaboremos, completa tus datos y entremos en
+                        contacto</span>
+                </p>
+            </article>
+
+            <article class="informacion_datos">
+                <h3>//contacto</h3>
+                <form method="post" action="mailto:canedoflorencia@gmail.com?subject=Email enviado desde el formulario"
+                    target="_blank" enctype="text/plain">
+                    <input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder="Nombre" required>
+
+
+                    <input type="email" name="Email" id="Email" placeholder="usuario@mail.com" required>
+
+
+                    <input type="asunto" name="Asunto" placeholder="Me interesan tus servicios" maxlength="30" required>
+
+
+                    <textarea name="Mensaje" id="Mensaje">Escriba aquí</textarea>
+
+                    <input type="submit" id="boton_enviar">
+                </form>
+            </article>
+
+        </section>
+
+    </main>
+</body>
