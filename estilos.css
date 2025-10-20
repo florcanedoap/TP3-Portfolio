@@ -261,12 +261,6 @@ nav {
     flex-direction: column;
 }
 
-.trabajemos_juntos {
-    display: flex;
-    flex-direction: column;
-    margin: 50px 50px 0 50px;
-    padding-right: 30%;
-}
 
 .columnas {
     display: flex;
