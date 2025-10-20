@@ -69,10 +69,8 @@ p {
     color: var(--color_texto);
     font-family: Montserrat;
     font-size: 2rem;
-    font-style: normal;
     font-weight: 500;
     line-height: 45px;
-    letter-spacing: 2px;
 }
 
 .texto_roboto {
@@ -259,6 +257,8 @@ nav {
 .charlemos_flex {
     display: flex;
     flex-direction: column;
+    margin: 30px 0 0 50px;
+    width: 55%;
 }
 
 
@@ -277,7 +277,7 @@ nav {
     gap: 20px;
     width: 40%;
     align-items: start;
-    margin: 30px 0 0px 50px;
+    
 }
 
 #boton_enviar {
@@ -307,12 +307,10 @@ textarea {
 
 span {
     color: var(--color_texto);
-    font-family: "IBM Plex Sans";
+    font-family: Montserrat;
     font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 5px;
-    width: 60%;
+    font-weight: 500;
+    line-height: 30px;
 }
 
 form {
@@ -320,7 +318,6 @@ form {
     display: flex;
     flex-direction: column;
     border-radius: 50px;
-    align-items: center;
     gap: 20px;
 }
 
@@ -329,8 +326,19 @@ form {
     flex-direction: row;
     gap: 20px;
     align-items: center;
+    justify-content: space-between;
+    margin: 10px 50px 0px 50px;
 }
+
 .flex_redes {
     display: flex;
     flex-direction: column;
+    gap:30px;
+}
+
+.flex_li {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
 }

@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DG | Florencia Cañedo</title>
     <link href="estilos.css" rel="stylesheet" type="text/css">
-    <link rel="icon" type="image/svg" href="img/flor_head.svg">
+    <link rel="icon" type="image/svg" href="img/svg/flor_head.svg">
 </head>
 
 <body>
     <header>
         <nav>
             <div>
-                <img src="img/flor_header.svg" alt="flores_del_nav" id="flor_nav" width="156" height="36">
+                <img src="img/svg/flor_header.svg" alt="flores_del_nav" id="flor_nav" width="156" height="36">
             </div>
 
             <div class="botonera">
@@ -28,15 +28,15 @@
 
     <main>
         <section class="charlemos_flex">
-                <h2>/TRABAJEMOS JUNTOS</h2>
-                <p><span>Si te interesaron mis trabajos y querés que colaboremos, completa tus datos y entremos en
-                        contacto</span>
-                </p>
-            </section>
+            <h2>/TRABAJEMOS JUNTOS</h2>
+            <p><span>Si te interesaron mis trabajos y querés que colaboremos, completa tus datos y entremos en
+                    contacto</span>
+            </p>
+        </section>
 
-            <section>
+        <section class="flex_contacto">
             <article class="informacion_datos">
-                <h3>//contacto</h3>
+                <h3><span>//CONTACTO</span></h3>
                 <form method="post" action="mailto:canedoflorencia@gmail.com?subject=email enviado desde el formulario"
                     target="_blank" enctype="text/plain">
                     <input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder="Nombre" required>
@@ -48,40 +48,52 @@
                     <input type="asunto" name="Asunto" placeholder="Me interesan tus servicios" maxlength="30" required>
 
 
-                    <textarea name="Mensaje" id="Mensaje">Escriba aquí</textarea>
+                    <textarea name="Mensaje" id="Mensaje" placeholder="Escriba aquí" required></textarea>
 
                     <input type="submit" id="boton_enviar">
                 </form>
             </article>
-        </section>
+
+            <article>
+                <li class="flex_li">
+                    <img src="" alt="logo_celular">
+                    <p><span>+54 9 11 1234 5678</span></p>
+                </li>
+
+
+                <li class="flex_li">
+                    <img src="" alt="logo_mail">
+                    <p><span>canedoflorencia@gmail.com</span></p>
+                </li>
+
+                <li class="flex_li">
+                    <img src="" alt="logo_ubicacion">
+                    <p><span>Lanús, Buenos Aires</span></p>
+                </li>
+            </article>
             
-
-            <div>
-                <img src="img/contacto/redes/behance.svg" alt="logo_behance" height="95" >
-
-        </section>
-    </main>
-
-    <footer class="caja_footer">
-        <div class="flex_footer">
-            <p id="texto_footer">Copyright © 2025</p>
-
-            <p id="texto_footer"> /// Todos los derechos reservados ///</p>
-        </div>
-
-        <div id="footer_redes">
-            <a id="be" href="https://www.behance.net/florenciacaedo1">
-                <img src="img/svg/provisorio/behance.svg" alt="link_behance" height="40">
+            <article class="flex_redes">
+                <a id="be" href="https://www.behance.net/florenciacaedo1">
+                <img src="img/contacto/redes/behance.svg" alt="link_behance" width="65">
             </a>
 
             <a id="ig" href="https://www.instagram.com/florcanedoap/">
-                <img src="img/svg/provisorio/instagram.svg" alt="link_ig" width="40">
+                <img src="img/contacto/redes/instagram.svg" alt="link_ig" width="65">
             </a>
 
 
             <a id="linkedin" href="https://www.linkedin.com/in/florencia-ca%C3%B1edo/">
-                <img src="img/svg/provisorio/linkedin.svg" alt="link_linkedin" width="40">
+                <img src="img/contacto/redes/linkedin.svg" alt="link_linkedin" width="65">
             </a>
-        </div>
+        </section>
+
+
+
+    </main>
+
+    <footer class="caja_footer">
+            <p id="texto_footer">Copyright © 2025</p>
+            <p id="texto_footer">///</p>
+            <p id="texto_footer">Todos los derechos reservados</p>
     </footer>
 </body>
