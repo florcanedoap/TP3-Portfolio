@@ -8,15 +8,18 @@
     <link rel="icon" type="image/svg" href="img/svg/flor_head.svg">
 </head>
 
+
+
 <body>
+
+    <!-- HEADER -->
     <header>
         <nav>
-            <div>
-                <img src="img/svg/flor_header.svg" alt="flores_del_nav" id="flor_nav" width="156" height="36">
-            </div>
+            <a class="boton_html" href="index.html">
+                <img src="img/svg/flor_header.svg" alt="flor_botoninicio" height="35" class="flor_navanimada">
+            </a>
 
             <div class="botonera">
-                <a class="boton_html" href="index.html">INICIO</a>
                 <a class="boton_html" id="nav_abierto" href="conoceme.html">CONOCEME</a>
                 <a class="boton_html" href="diseño.html">DISEÑO</a>
                 <a class="boton_html" href="galeria.html">GALERÍA</a>
@@ -25,54 +28,102 @@
         </nav>
     </header>
 
+    <!--MAIN-->
     <main>
-        <section class="flex_arriba">
-            <div>
+        <!--SOBRE MI-->
+        <section class="flex_columnas">
+            <div class="columna_izq">
                 <h2>/ HOLI, SOY FLOR</h2>
+                <div id="datos_sobremi">
+                    <img src="img/conoceme/foto_cv.jpg" alt="foto_de_presentacion" id="foto_sobremi" width="300"
+                        height="433">
+                    <p>Escorpiana, melómana y fan del mate. Estudiante (avanzada) de la carrera Lic. Diseño y
+                        Comunicación
+                        Visual, entre muchas cosas más. De chiquita lloraba porque no me salía dibujar una casita
+                        <span>(abuela
+                            gracias por tu amor y ayuda)</span>, y hoy no me imagino un día donde el diseño no forme
+                        parte
+                        de mí.
+
+                        Mi mente es como una mesa de trabajo: pienso en colores, razono y organizo entre grillas y
+                        diseño mi
+                        vida con constantes y variables.
+                    </p>
+                </div>
             </div>
 
-            <div id="datos_sobremi">
-                <img src="img/conoceme/foto_cv.jpg" alt="foto_de_presentacion" id="foto_sobremi" width="300"
-                    height="433">
-                <p>Escorpiana, melómana y fan del mate. Estudiante (avanzada) de la carrera Lic. Diseño y Comunicación
-                    Visual, entre muchas cosas más. De chiquita lloraba porque no me salía dibujar una casita (abuela
-                    gracias por tu amor y ayuda), y hoy no me imagino un día donde el diseño no forme parte de mí.
+            <div class="columna_der">
+                <img src="img/index/flor_index2.svg" alt="flor_inicio" width="180" height="180" class="flor_animada"
+                    id="elementoa">
 
-                    Pienso en colores, razono entre grillas y baso gran parte de mi vida entre constantes y variables.
-                </p>
+                <img src="img/index/flor_index.svg" alt="flor_inicio" width="250" height="250" class="flor_animada"
+                    id="elementob">
+
+                <img src="img/index/flor_index2.svg" alt="flor_inicio" width="180" height="180" class="flor_animada"
+                    id="elementoc">
             </div>
         </section>
 
+        <!--MUSICA Y SLIDER-->
         <section class="flex_abajo">
             <div>
                 <h3>/LO QUE SUENA</h3>
                 <iframe data-testid="embed-iframe" style="border-radius:20px"
-                    src="https://open.spotify.com/embed/playlist/7rVIyz2fJl9NrU1omdu6m8?utm_source=generator" 
+                    src="https://open.spotify.com/embed/playlist/7rVIyz2fJl9NrU1omdu6m8?utm_source=generator"
                     width="550" height="352" frameBorder="0" allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+                    title="Playlist de Spotify">
                 </iframe>
             </div>
 
-
-            <div>
-                <h3>/EL BACK</h3>
-
-                <input type="radio" name="slider" id="slide1">
+            <div class="slider_container">
+                <h3>/WORK WORK WORK</h3>
+                <input type="radio" name="slider" id="slide1" checked>
                 <input type="radio" name="slider" id="slide2">
                 <input type="radio" name="slider" id="slide3">
                 <input type="radio" name="slider" id="slide4">
                 <input type="radio" name="slider" id="slide5">
+                <input type="radio" name="slider" id="slide6">
+                <input type="radio" name="slider" id="slide7">
+                <input type="radio" name="slider" id="slide8">
+
+                <div class="slide_workspace">
+                    <img src="img/conoceme/slide/space1.jpg" alt="space1" class="img1">
+                    <img src="img/conoceme/slide/space2.jpg" alt="space2" class="img2">
+                    <img src="img/conoceme/slide/space3.jpg" alt="space3" class="img3">
+                    <img src="img/conoceme/slide/space4.jpg" alt="space4" class="img4">
+                    <img src="img/conoceme/slide/space5.jpg" alt="space5" class="img5">
+                    <img src="img/conoceme/slide/space6.jpg" alt="space6" class="img6">
+                    <img src="img/conoceme/slide/space7.jpg" alt="space7" class="img7">
+                    <img src="img/conoceme/slide/space8.jpg" alt="space8" class="img8">
+                </div>
+
+                <div class="puntos_space">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                    <label for="slide5"></label>
+                    <label for="slide6"></label>
+                    <label for="slide7"></label>
+                    <label for="slide8"></label>
+                </div>
             </div>
 
             <div>
-                <label for="slide1"></label>
-                <label for="slide2"></label>
-                <label for="slide3"></label>
-                <label for="slide4"></label>
-                <label for="slide5"></label>
-            </div>
+                <h3>/MIS HABILIDADES</h3>
+                <ul>
+                    <li> → Puntual</li>
+                    <li>→ Creativa</li>
+                    <li>→ Escucha activa</li>
+                    <li>→ Buena comunicación</li>
+                    <li>→ Resolutiva </li>
+                </ul>
+                <div>
+        </section>
     </main>
 
+    <!--FOOTER-->
     <footer class="caja_footer">
         <div class="flex_footer">
             <p id="texto_footer">Copyright © 2025</p>
@@ -89,10 +140,11 @@
                 <img src="img/svg/footer/footer_instagram.svg" alt="link_ig" width="40">
             </a>
 
-
             <a id="linkedin" href="https://www.linkedin.com/in/florencia-ca%C3%B1edo/">
                 <img src="img/svg/footer/footer_linkedin.svg" alt="link_linkedin" width="42">
             </a>
         </div>
     </footer>
 </body>
+
+</html>
