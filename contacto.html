@@ -1,119 +1,110 @@
 <!DOCTYPE html>
 <html>
 
+</html>
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DG | Florencia Cañedo</title>
     <link href="estilos.css" rel="stylesheet" type="text/css">
-    <link rel="icon" type="image/svg" href="img/svg/flor_head.svg">
+    <link rel="icon" type="image/svg+xml" href="img/svg/flor_head.svg">
 </head>
 
+
 <body>
+
+    <!--HEADER-->
     <header>
         <nav>
-            <div>
-                <img src="img/svg/flor_header.svg" alt="flores_del_nav" id="flor_nav" width="156" height="36">
-            </div>
-
+            <a class="boton_html" href="index.html">
+                <img src="img/svg/flor_header.svg" alt="flor_botoninicio" height="35" class="flor_navanimada">
+            </a>
             <div class="botonera">
-                <a class="boton_html" href="index.html">INICIO</a>
-                <a class="boton_html" href="conoceme.html">CONOCEME</a>
+                <a class="boton_html" id="nav_abierto" href="conoceme.html">CONOCEME</a>
                 <a class="boton_html" href="diseño.html">DISEÑO</a>
                 <a class="boton_html" href="galeria.html">GALERÍA</a>
-                <a class="boton_html" id="nav_abierto" href="contacto.html">CHARLEMOS</a>
+                <a class="boton_html" href="contacto.html">CHARLEMOS</a>
             </div>
         </nav>
     </header>
 
+    <!--MAIN-->
     <main>
-        <section class="charlemos_flex">
-            <h2>/TRABAJEMOS JUNTOS</h2>
-            <p><span>Si te interesaron mis trabajos y querés que colaboremos, completa tus datos y entremos en
-                    contacto</span>
+        <!--INVITACIÓN-->
+        <section class="contenerdor_trabajemos">
+            <h1>/TRABAJEMOS JUNTOS</h1>
+            <p>
+                <span>Si te interesaron mis trabajos y querés que colaboremos, completá tus datos y entremos en
+                    contacto.</span>
             </p>
         </section>
 
-        <section class="flex_contacto">
+        <!--FORMULARIO-->
+        <section class="contenedor_abajo">
             <article class="informacion_datos">
-                <h3><span>//CONTACTO</span></h3>
+                <h3>//CONTACTO</h3>
+
                 <form method="post" action="mailto:canedoflorencia@gmail.com?subject=email enviado desde el formulario"
                     target="_blank" enctype="text/plain">
-                    <input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder="Nombre" required>
 
+                    <input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder="Nombre" required>
 
                     <input type="email" name="Email" id="Email" placeholder="usuario@mail.com" required>
 
+                    <input type="text" name="Asunto" id="Asunto" placeholder="Me interesan tus servicios" maxlength="30"
+                        required>
 
-                    <input type="asunto" name="Asunto" placeholder="Me interesan tus servicios" maxlength="30" required>
+                    <textarea name="Mensaje" id="Mensaje" placeholder="Escribí tu mensaje aquí" required></textarea>
 
-
-                    <textarea name="Mensaje" id="Mensaje" placeholder="Escriba aquí" required></textarea>
-
-                    <input type="submit" id="boton_enviar">
+                    <input type="submit" id="boton_enviar" value="ENVIAR">
                 </form>
             </article>
 
+            <!--CONTACTO-->
             <article>
-                <li class="flex_li">
-                    <img src="" alt="logo_celular">
-                    <p><span>+54 9 11 1234 5678</span></p>
-                </li>
+                <ul class="info_contacto">
+                    <li class="flex_li">
+                        <img src="img/contacto/contacto/icon_telefono.svg" alt="icono_de_telefono" width="40">
+                        +54 9 11 1234 5678
+                    </li>
 
+                    <li class="flex_li">
+                        <img src="img/contacto/contacto/icon_mail.svg" alt="icono_mail" width="40">
+                        canedoflorencia@gmail.com
+                    </li>
 
-                <li class="flex_li">
-                    <img src="" alt="logo_mail">
-                    <p><span>canedoflorencia@gmail.com</span></p>
-                </li>
-
-                <li class="flex_li">
-                    <img src="" alt="logo_ubicacion">
-                    <p><span>Lanús, Buenos Aires</span></p>
-                </li>
+                    <li class="flex_li">
+                        <img src="img/contacto/contacto/icon_ubicacion.svg" alt="icono_ubicacion" width="35"
+                            height="40">
+                        Lanús, Buenos Aires
+                    </li>
+                </ul>
             </article>
 
-            <article class="flex_redes">
-                <a id="be" href="https://www.behance.net/florenciacaedo1">
-                    <img src="img/contacto/redes/behance.svg" alt="link_behance" width="65">
+            <aside class="flex_redes">
+                <a id="be" href="https://www.behance.net/florenciacaedo1" target="_blank" rel="noopener">
+                    <img src="img/contacto/redes/behance.svg" alt="Enlace a Behance" width="100">
                 </a>
 
-                <a id="ig" href="https://www.instagram.com/florcanedoap/">
-                    <img src="img/contacto/redes/instagram.svg" alt="link_ig" width="65">
+                <a id="ig" href="https://www.instagram.com/florcanedoap/" target="_blank" rel="noopener">
+                    <img src="img/contacto/redes/instagram.svg" alt="Enlace a Instagram" width="100">
                 </a>
 
-
-                <a id="linkedin" href="https://www.linkedin.com/in/florencia-ca%C3%B1edo/">
-                    <img src="img/contacto/redes/linkedin.svg" alt="link_linkedin" width="65">
+                <a id="linkedin" href="https://www.linkedin.com/in/florencia-ca%C3%B1edo/" target="_blank"
+                    rel="noopener">
+                    <img src="img/contacto/redes/linkedin.svg" alt="Enlace a LinkedIn" width="100">
                 </a>
+            </aside>
         </section>
-
-
 
     </main>
 
-    <!--FOOTER-->
-    <footer class="caja_footer">
-        <div class="flex_footer">
-            <p id="texto_footer">Copyright © 2025</p>
+     <footer class="caja_footer">
+            <p class="flex_footer" id="texto_footer">Copyright © 2025</p>
 
-            <p id="texto_footer"> /// Todos los derechos reservados ///</p>
-        </div>
-
-        <div id="footer_redes">
-            <a id="be" href="https://www.behance.net/florenciacaedo1">
-                <img src="img/svg/footer/footer_behance.svg" alt="link_behance" height="35">
-            </a>
-
-            <a id="ig" href="https://www.instagram.com/florcanedoap/">
-                <img src="img/svg/footer/footer_instagram.svg" alt="link_ig" width="40">
-            </a>
-
-            <a id="linkedin" href="https://www.linkedin.com/in/florencia-ca%C3%B1edo/">
-                <img src="img/svg/footer/footer_linkedin.svg" alt="link_linkedin" width="42">
-            </a>
-        </div>
+            <p class="flex_footer"  id="texto_footer"> /// Todos los derechos reservados ///</p>
     </footer>
-</body>
 
-</html>
 </body>
+</html>
