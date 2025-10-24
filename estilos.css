@@ -143,7 +143,35 @@ nav {
 
 /* ANIMACIONES */
 
-/* index */
+/*animación para los botones de navegación*/
+
+.flor_navanimada {
+    animation: latido 1s infinite ease-in-out;
+}
+
+@keyframes latido {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.boton_html {
+    text-decoration: none;
+    position: relative;
+    transition: transform 0.4s ;
+}
+
+.boton_html:hover {
+    transform: scale(1.15);
+}
+
+/*animación en index*/
 .flor_animada {
     animation-name: girar;
     animation-duration: 5s;
@@ -166,24 +194,6 @@ nav {
 .girar {
     animation: girar continuo 2s linear infinite;
 }
-
-.flor_navanimada {
-    animation: latido 1s infinite ease-in-out;
-}
-
-/* navs de los demás html */
-@keyframes latido {
-
-    0%,
-    100% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.1);
-    }
-}
-
 
 /* INDEX */
 
@@ -453,3 +463,7 @@ aside {
     flex-direction:column;
     gap: 50px;
 }
+
+/*DISEÑO*/
+
+
