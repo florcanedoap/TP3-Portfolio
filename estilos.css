@@ -43,7 +43,7 @@ h1 {
 
     font-family: "Display";
     color: var(--color_texto);
-    font-size: 7rem;
+    font-size: 6rem;
     letter-spacing: 5px;
 }
 
@@ -162,7 +162,6 @@ nav {
 }
 
 .boton_html {
-    text-decoration: none;
     position: relative;
     transition: transform 0.4s ;
 }
@@ -171,7 +170,7 @@ nav {
     transform: scale(1.15);
 }
 
-/*animación en index*/
+/*animación en index */
 .flor_animada {
     animation-name: girar;
     animation-duration: 5s;
@@ -194,6 +193,8 @@ nav {
 .girar {
     animation: girar continuo 2s linear infinite;
 }
+
+
 
 /* INDEX */
 
@@ -389,10 +390,9 @@ input[type="radio"] {
 
 /* CONTACTO */
 
-.contenerdor_trabajemos {
+.contenerdor_inicio {
     margin: 0 0 0 50px;
 }
-
 
 .contenedor_abajo {
     display: flex;
@@ -466,4 +466,9 @@ aside {
 
 /*DISEÑO*/
 
+/*GALERÍA*/
 
+.contenerdor_inicio {
+    margin: 0 0 0 50px;
+    width: 60%;
+}
