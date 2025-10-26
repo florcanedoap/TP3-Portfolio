@@ -11,45 +11,47 @@
 
 @font-face {
     font-family: "Display";
-    src: url(fonts/Display/5thAvenue.ttf), format(truetype);
+    src: url(fonts/Display/5thAvenue.ttf), format("truetype");
 }
 
+/* para todos los html en general*/
 
-/* para todos los html */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
 
 :root {
-    --color_fondo: #fff8f2;
-    --color_texto: #de0060;
+    --color_fondo: #fffcf5;
+    --color_texto: #e60063;
     --color_textosec: #ff4d00;
     --color_vectores: #ff7e01;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+a {
+    text-decoration: none;
+}
+
+ul {
     list-style: none;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    cursor: url(img/svg/cursor.svg), auto;
-    background-color: var(--color_fondo);
-}
-
+/*cuerpos tipográficos*/ 
 h1 {
 
     font-family: "Display";
     color: var(--color_texto);
-    font-size: 6rem;
-    letter-spacing: 5px;
+    font-size: 7rem;
+    letter-spacing: 9px;
 }
 
 h2 {
     color: var(--color_textosec);
-    font-family: "IBM Plex SAns";
+    font-family: "IBM Plex Sans", sans-serif;
     font-size: 2.5rem;
     font-style: italic;
     font-weight: 700;
@@ -58,7 +60,7 @@ h2 {
 
 h3 {
     color: var(--color_fondo);
-    font-family: "IBM Plex Sans";
+    font-family: "IBM Plex Sans", sans-serif;
     font-size: 2.1rem;
     font-style: italic;
     font-weight: 500;
@@ -68,83 +70,20 @@ h3 {
 p {
     color: var(--color_texto);
     font-family: "Montserrat";
-    font-size: 1.7rem;
-    font-weight: 550;
-    line-height: 40px;
+    font-size: 1.9rem;
+    font-weight: 500;
 }
 
 .texto_roboto {
     color: var(--color_texto);
     font-family: "Roboto Mono";
     font-weight: 700;
-    font-size: 2rem;
-    width:100%;
-    
+    font-size: 2.5rem;
 }
 
-nav {
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-    margin: 40px 60px 0 60px;
-}
+/*ANIMACIONES*/
 
-.botonera {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    gap: 56px;
-    flex-direction: row;
-
-}
-
-.boton_html {
-    color: var(--color_texto);
-    font-family: "Roboto Mono";
-    font-size: 1.7rem;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-#nav_abierto {
-    color: #ff4d00;
-}
-
-.caja_footer {
-    display: flex;
-    flex-direction: row;
-    background-color: var(--color_vectores);
-    height: 100px;
-    margin-top: 50px;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-
-}
-
-.flex_footer {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-}
-
-#texto_footer {
-    font-family: "Roboto Mono";
-    font-weight: 500;
-    font-size: 1.5rem;
-    color: var(--color_fondo);
-}
-
-#footer_redes {
-    display: flex;
-    flex-direction: row;
-    gap: 35px;
-}
-
-/* ANIMACIONES */
-
-/*animación para los botones de navegación*/
-
+/*animación para los botones de navegación de los html*/
 .flor_navanimada {
     animation: latido 1s infinite ease-in-out;
 }
@@ -177,7 +116,6 @@ nav {
     position: relative;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    margin: 25px;
 }
 
 @keyframes girar {
@@ -191,35 +129,39 @@ nav {
 }
 
 .girar {
-    animation: girar continuo 2s linear infinite;
+    animation: girar continuo 15s linear infinite;
 }
 
-
+.boton_index:hover {
+    background-color: var(--color_textosec);
+    transform: scale(1.2);
+}
 
 /* INDEX */
 
-.body_index {
+.contenedor_body {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    /* reparte header, main y footer */
     align-items: center;
-    justify-content: space-evenly;
-    margin: 55px;
-    gap: 80px;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .seccion_presentacion {
     display: flex;
     align-items: center;
-    flex-direction: row;
-    gap: 15px;
+    gap: 50px;
 }
+
 
 .botonera_index {
     display: flex;
     flex-direction: row;
-    gap: 100px;
-    justify-content: space-evenly;
-    margin-top: 50px;
+    gap: 180px;
+    justify-content: center;
+
 }
 
 .boton_index {
@@ -229,246 +171,7 @@ nav {
     font-family: "Roboto Mono";
     font-size: 2rem;
     font-weight: 500;
-    text-decoration: none;
     color: var(--color_fondo);
+    transition: all 0.3s ease-in-out;
 }
 
-/* CONOCEME */
-
-.flex_columnas {
-    display: flex;
-    flex-direction: row;
-    gap: 1px;
-    align-items: center;
-    justify-content: space-between;
-    margin: 5px 100px 0 100px 
-}
-
-
-.columna_izq {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.columna_der {
-    position: relative;
-    width: 180px;
-    height: 180px;
-}
-
-.columna_der img {
-    position: absolute;
-    opacity:35%;
-}
-
-#elementoa {
-    z-index: 1;
-    top: 20px;
-    right: 300px;
-    
-}
-
-#elementob {
-    z-index: 4;
-    bottom: 2px;
-    right: 100px;
-}
-
-#elementoc {
-    z-index: 8;
-    top: 130px;
-    right: 200px;
-}
-
-
-#datos_sobremi {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    width: 60%;  
-    color: var(--color_textosec);
-}
-
-#foto_sobremi {
-    border-radius: 20px;
-}
-
-span {
-    font-style: italic;
-}
-
-.flex_abajo {
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    margin: 50px 150px 0 150px;
-    gap: 1px;
-    justify-content: space-between;
-
-}
-
-ul {
-    color: var(--color_texto);
-    font-family: "Roboto Mono";
-    font-weight: 600;
-    font-size: 2rem;
-    margin-top: 40px;
-    line-height: 50px;
-}
-
-.slider_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.slide_workspace {
-    position: relative;
-    height: 352px;
-    width: 300px;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.slide_workspace img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 0.3s;
-    border-radius: 1.5rem;
-    z-index: 1;
-}
-
-#slide1:checked~.slide_workspace .img1,
-#slide2:checked~.slide_workspace .img2,
-#slide3:checked~.slide_workspace .img3,
-#slide4:checked~.slide_workspace .img4,
-#slide5:checked~.slide_workspace .img5,
-#slide6:checked~.slide_workspace .img6,
-#slide7:checked~.slide_workspace .img7,
-#slide8:checked~.slide_workspace .img8 {
-    opacity: 1;
-    z-index: 2;
-}
-
-.puntos_space {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 15px;
-}
-
-.puntos_space label {
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    border: 2px solid var(--color_textosec);
-    cursor: pointer;
-}
-
-#slide1:checked~.puntos_space label[for="slide1"],
-#slide2:checked~.puntos_space label[for="slide2"],
-#slide3:checked~.puntos_space label[for="slide3"],
-#slide4:checked~.puntos_space label[for="slide4"],
-#slide5:checked~.puntos_space label[for="slide5"],
-#slide6:checked~.puntos_space label[for="slide6"],
-#slide7:checked~.puntos_space label[for="slide7"],
-#slide8:checked~.puntos_space label[for="slide8"] {
-    background: var(--color_textosec);
-    border-color: var(--color_textosec);
-}
-
-input[type="radio"] {
-    display: none;
-}
-
-/* CONTACTO */
-
-.contenerdor_inicio {
-    margin: 0 0 0 50px;
-}
-
-.contenedor_abajo {
-    display: flex;
-    flex-direction: row;
-    gap:180px;
-    align-items: center;
-    justify-content: center;
-}
-
-.informacion_datos {
-    background-color: var(--color_textosec);
-    border-radius: 30px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 33%;
-    align-items: start;
-    margin-top: 30px
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-    align-items: center;
-    gap: 20px;
-}
-
-#boton_enviar {
-    background-color: var(--color_fondo);
-    color: var(--color_textosec);
-    font-weight: 700;
-}
-
-
-input,
-textarea {
-    font-family: "Montserrat";
-    border: none;
-    font-size: 1.2rem;
-    border-radius: 30px;
-    padding: 10px 30px;
-    width: 575px;
-}
-
-textarea {
-    height: 200px;
-}
-
-
-.flex_li {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.info_contacto {
-    color: var(--color_texto);
-    font-family: "Roboto Mono";
-    font-weight: 700;
-    font-size: 1.9rem;
-    line-height: 90px;
-}
-
-aside {
-    display:flex;
-    flex-direction:column;
-    gap: 50px;
-}
-
-/*DISEÑO*/
-
-/*GALERÍA*/
-
-.contenerdor_inicio {
-    margin: 0 0 0 50px;
-    width: 60%;
-}
