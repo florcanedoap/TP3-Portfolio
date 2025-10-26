@@ -115,6 +115,7 @@ p {
     font-size: 2.5rem;
 }
 
+
 .caja_footer {
     display: flex;
     flex-direction: row;
@@ -384,4 +385,86 @@ ul {
     font-size: 2rem;
     margin-top: 40px;
     line-height: 50px;
+}
+
+/* CONTACTO */
+
+.contenerdor_inicio {
+    margin-left: 50px;
+    
+}
+
+.contenedor_abajo {
+    display: flex;
+    flex-direction: row;
+    gap:180px;
+    align-items: center;
+    justify-content: center;
+}
+
+.informacion_datos {
+    background-color: var(--color_textosec);
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 33%;
+    align-items: start;
+    margin-top: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+    gap: 20px;
+}
+
+#boton_enviar {
+    background-color: var(--color_fondo);
+    color: var(--color_textosec);
+    font-weight: 700;
+    width: 70%;
+}
+
+
+input,
+textarea {
+    font-family: "Montserrat";
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    padding: 10px 30px;
+    width: 575px;
+}
+
+textarea {
+    height: 200px;
+}
+
+
+.flex_li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.info_contacto {
+    color: var(--color_texto);
+    font-family: "Roboto Mono";
+    font-weight: 700;
+    font-size: 1.9rem;
+    line-height: 90px;
+}
+
+aside {
+    display:flex;
+    flex-direction:column;
+    gap: 50px;
+}
+
+a:hover {
+    transform: scale(1.15);
 }
