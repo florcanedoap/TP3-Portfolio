@@ -402,8 +402,7 @@ span {
     display: flex;
     flex-direction: row;
     align-items: start;
-    gap: 100px;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 /*slider ilustraciones*/
