@@ -206,6 +206,19 @@ p {
     transform: scale(1.2);
 }
 
+/*animación en el html de mimate*/
+@keyframes destello {
+    0% {
+        text-shadow: 0 0 100px #fff, 0 0 10px var(--color_textosec); 
+    }
+    50% {
+        text-shadow: 0 0 400px #fff, 0 0 20px var(--color_textosec), 0 0 30px var(--color_vectores);
+    }
+    100% {
+        text-shadow: 0 0 100px #fff, 0 0 10px var(--color_textosec);
+    }
+}
+
 /*animación en conoceme.html*/
 .tarjeta:hover {
     transform: scale(1.03);
@@ -361,7 +374,7 @@ a:hover {
     flex-direction: row;
     align-items: center;
     gap: 25px;
-    width: 65%;  
+    width: 75%;  
 }
 
 span {
@@ -402,7 +415,7 @@ span {
     display: flex;
     flex-direction: row;
     align-items: start;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-left: 40px;
     margin-right: 40px;
 }
@@ -542,7 +555,7 @@ iframe {
 .bajada_galeria {
     font-size: 1.6rem;
     line-height: 35px;
-    width: 85%;
+    width: 80%;
 }
 
 .galeria {
@@ -581,8 +594,30 @@ iframe {
     margin: 30px 0 0 30px;
 }
 
+/*html de foto producto*/
+#tarjeta_helado {
+    color: var(--color_textosec);
+    padding: 10px;
+    border: solid 2px var(--color_textosec);
+    border-radius: 90px;
+    text-align: center;
+    max-width: 400px;
+    margin-right: 50px;
+}
 
+#galeria_producto {
+    max-width: 1000px;
+}
 
+/*html mimate by flor*/ 
+#mimate_ig {
+    font-family: "IBM Plex Sans";
+    font-size: 3rem;
+    text-align: center;
+    color: var(--color_fondo);
+    font-weight: 600;
+    animation: destello 1.8s infinite alternate ease-in-out;
+}
 /* CONTACTO */
 
 /*texto de invitación*/
