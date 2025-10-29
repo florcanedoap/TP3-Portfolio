@@ -402,7 +402,7 @@ span {
     display: flex;
     flex-direction: row;
     align-items: start;
-    gap: 60px;
+    gap: 100px;
     justify-content: center;
 }
 
@@ -661,3 +661,4 @@ aside {
     gap: 90px;
     margin-right: 90px;
 }
+
