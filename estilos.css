@@ -112,10 +112,11 @@ p {
 }
 
 .bajada {
-    width: 50%;
+    width: 60%;
     font-style: italic;
     max-width: 1200px;
     margin: 0;
+    font-size: 1.7rem;
 }
 .texto_roboto {
     color: var(--color_texto);
@@ -163,7 +164,6 @@ p {
 }
 
 @keyframes latido {
-
     0%,
     100% {
         transform: scale(1);
@@ -503,6 +503,14 @@ input[type="radio"] {
     transition: transform 0.4s ease;
 }
 
+/*DISEÑO*/
+
+video {
+    border-radius: 40px;
+}
+
+
+
 /*GALERÍA*/
 
 /*inicio de galería*/
@@ -618,7 +626,6 @@ iframe {
     font-weight: 600;
     animation: destello 1.8s infinite alternate ease-in-out;
 }
-
 
 /* CONTACTO */
 
