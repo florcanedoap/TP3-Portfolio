@@ -1195,7 +1195,7 @@ aside {
 
     .texto_roboto, footer p {
         font-size: 1.1rem;
-        margin: 10px;
+        margin: 5px;
         text-align: center;
         color: var(--color_texto);
     }
@@ -1248,7 +1248,7 @@ aside {
     }
 
     footer {
-        margin-bottom: 15px;
+        margin-bottom: 5px
     }
 
     
