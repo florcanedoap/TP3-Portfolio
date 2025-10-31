@@ -1192,7 +1192,6 @@ aside {
 /*Versión Mobile*/
 @media screen and (max-width: 425px) {
 
-
     .texto_roboto, footer p {
         font-size: 1.1rem;
         margin: 5px;
@@ -1213,8 +1212,7 @@ aside {
         font-size: 4.4rem;
         line-height: 80px;
         text-align: center;
-        letter-spacing: 2px;
-        
+        letter-spacing: 10px;
     }
 
     .flor_animada {
