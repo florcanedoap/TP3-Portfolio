@@ -764,7 +764,7 @@ video {
     height: 352px;
     border-radius: 30px;
     max-width: 640px;
-    border: 1px solid var(--color_textosec);
+    border: 2px solid var(--color_textosec);
 }
 
 #video_bajada {
