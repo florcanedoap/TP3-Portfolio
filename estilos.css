@@ -1147,7 +1147,6 @@ aside {
         height: 350px;
     }
 
-
     .tarjeta {
         position: relative;
         width: 350px;
@@ -1187,4 +1186,70 @@ aside {
         width: 32px;
         height: 32px;
     }
+}
+
+
+/*Versión Mobile*/
+@media screen and (max-width: 425px) {
+
+
+    .texto_roboto, footer p {
+        font-size: 1.1rem;
+        margin: 10px;
+        text-align: center;
+        color: var(--color_texto);
+    }
+
+    .seccion_presentacion {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        margin: 10px;
+  
+    }
+
+    h1  {
+        font-size: 4.4rem;
+        line-height: 80px;
+        text-align: center;
+        letter-spacing: normal;
+        
+    }
+
+    .flor_animada {
+        width: 70px;
+        height: 70px;
+
+    }
+    .botonera_index {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 40px;
+        
+    }
+
+    .boton_index {
+        display: inlinek;
+        width: 50%;  
+        font-size: 1rem;
+        text-decoration: none;
+        background-color: var(--color_vectores);
+        border-radius: 60px;
+        text-align: center;
+        margin-top: 20px;
+        transition: background-color 0.5s ease;
+    }
+
+    .boton_index:hover {
+        background-color: var(--color_textosec)
+    }
+
+    footer {
+        margin-bottom: 15px;
+    }
+
+    
 }
