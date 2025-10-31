@@ -1212,7 +1212,7 @@ aside {
         font-size: 4.4rem;
         line-height: 80px;
         text-align: center;
-        letter-spacing: 10px;
+        letter-spacing: normal;
     }
 
     .flor_animada {
